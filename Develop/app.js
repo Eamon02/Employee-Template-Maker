@@ -46,6 +46,7 @@ async function init() {
                 choices: ['ENGINEER', 'Intern', 'Manager']
             }]);
 
+        //Switch Based on Role Selection Function
         switch (answer.role) {
 
             case ENGINEER:
@@ -101,7 +102,7 @@ async function init() {
                                 message: 'Enter Manager Office Number',
                             }
                         ]);
-                        
+
                         employees.push(new Manager(answer.name, answer.id, answer.email, answer2.officeNumber))
 
                         break;
@@ -113,7 +114,8 @@ async function init() {
                 };
         }
 
-        try{
+        //Repeat Function
+        try {
             let repeat = await inquirer.prompt(
                 {
                     type: 'confirm',
@@ -122,10 +124,10 @@ async function init() {
                 }
             );
 
-            if(repeat.addAnother === true){
+            if (repeat.addAnother === true) {
                 console.log('go again')
                 return init()
-            }else{
+            } else {
                 renderOut()
             }
 
@@ -133,11 +135,29 @@ async function init() {
             throw error;
         }
 
-            console.log(employees)
+        console.log(employees)
     } catch (error) {
         throw error;
     }
 };
+
+//Render function
+function renderOut() {
+    if (fs.existsSync(outputPath)) {
+        fs.writeFile(outputPath, render(employees), (err) => {
+            if (err) throw err
+            console.log('success')
+        })
+    } else {
+        fs.mkdir('output', (err) => {
+            fs.writeFile(outputPath, render(employees), (err) => {
+                if (err) throw err
+                console.log('success')
+            })
+        }
+        )
+    }
+}
 
 
 init()
