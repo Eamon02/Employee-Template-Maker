@@ -11,7 +11,7 @@
 
 ## Demo
 
-![Demo](https://youtu.be/bxcEyhwYZTc) 
+[![Demo Video of CLI ReadMe Generator](https://img.youtube.com/vi/YouTubeVideobxcEyhwYZTc/0.jpg)](https://www.youtube.com/watch?v=bxcEyhwYZTc)
 
 # Unit 10 OOP Homework: Template Engine - Employee Summary
 
