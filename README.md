@@ -1,7 +1,6 @@
 # Employee Template Maker
 ![GitHub](https://img.shields.io/github/license/Eamon02/Employee-Template-Maker?color=blueviolet)
 ![GitHub fork](https://img.shields.io/github/forks/Eamon02/Employee-Template-Maker?style=social)
-![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/Eamon02/Employee-Template-Maker/inquirer)
 
 ## Sources & Collaborators 
 
@@ -11,7 +10,7 @@
 
 ## Demo
 
-[![Demo Video of CLI ReadMe Generator](https://img.youtube.com/vi/YouTubeVideobxcEyhwYZTc/0.jpg)](https://www.youtube.com/watch?v=bxcEyhwYZTc)
+[![Demo](https://img.youtube.com/vi/YouTubeVideobxcEyhwYZTc/0.jpg)](https://www.youtube.com/watch?v=bxcEyhwYZTc)
 
 # Unit 10 OOP Homework: Template Engine - Employee Summary
 
